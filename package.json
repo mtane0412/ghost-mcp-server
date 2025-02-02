@@ -22,5 +22,16 @@
     "@types/node": "^20.11.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtane0412/ghost-mcp-server.git"
+  },
+  "keywords": [],
+  "author": "mtane0412",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mtane0412/ghost-mcp-server/issues"
+  },
+  "homepage": "https://github.com/mtane0412/ghost-mcp-server#readme"
 }

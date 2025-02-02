@@ -394,6 +394,18 @@ export const searchPosts = async ({
 
 export const createPost = async (params: CreatePostParams): Promise<ToolResponse> => {
   try {
+    // lexicalデータのバリデーションと不要なタグの除去
+    if (params.lexical) {
+      try {
+        // 文字列をJSONとしてパース
+        const lexicalData = JSON.parse(params.lexical);
+        // 不要なタグが含まれている可能性のある文字列を除去
+        params.lexical = JSON.stringify(lexicalData);
+      } catch (e) {
+        throw new Error('Lexicalデータが不正なJSON形式です');
+      }
+    }
+
     const post = await ghostApi.posts.add(params);
     return {
       content: [

@@ -1,5 +1,7 @@
 # Ghost MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@mtane0412/ghost-mcp-server)](https://smithery.ai/server/@mtane0412/ghost-mcp-server)
+
 A Model Context Protocol (MCP) server that integrates with the Ghost Admin API. This server enables programmatic access to Ghost CMS features including post management, page management, member management, and more.
 
 ## Features
@@ -19,6 +21,15 @@ A Model Context Protocol (MCP) server that integrates with the Ghost Admin API. 
 
 ## Installation
 
+### Installing via Smithery
+
+To install Ghost MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@mtane0412/ghost-mcp-server):
+
+```bash
+npx -y @smithery/cli install @mtane0412/ghost-mcp-server --client claude
+```
+
+### Manual Installation
 Install the package using npm:
 
 ```bash

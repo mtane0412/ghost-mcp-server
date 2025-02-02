@@ -1,0 +1,21 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - ghostUrl
+      - ghostAdminApiKey
+    properties:
+      ghostUrl:
+        type: string
+        description: The URL of your Ghost CMS instance.
+      ghostAdminApiKey:
+        type: string
+        description: The Admin API key for accessing the Ghost API.
+  commandFunction:
+    # A function that produces the CLI command to start the MCP on stdio.
+    |-
+    config => ({command: 'node', args: ['build/index.js'], env: {GHOST_URL: config.ghostUrl, GHOST_ADMIN_API_KEY: config.ghostAdminApiKey}})

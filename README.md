@@ -53,7 +53,7 @@ GHOST_ADMIN_API_KEY=your_admin_api_key
 After installation, start the server with:
 
 ```bash
-npx ghost-mcp-server
+npx @mtane0412/ghost-mcp-server
 ```
 
 ## Available Tools

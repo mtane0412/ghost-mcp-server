@@ -22,7 +22,7 @@ A Model Context Protocol (MCP) server that integrates with the Ghost Admin API. 
 Install the package using npm:
 
 ```bash
-npm install ghost-mcp-server
+npm install @mtane0412/ghost-mcp-server
 ```
 
 ## Configuration

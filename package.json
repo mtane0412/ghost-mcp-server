@@ -1,6 +1,6 @@
 {
   "name": "@mtane0412/ghost-mcp-server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Ghost MCP Server for interacting with Ghost CMS API",
   "type": "module",
   "main": "build/index.js",
